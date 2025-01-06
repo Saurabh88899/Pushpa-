@@ -34,7 +34,9 @@ recognition.onresult = (event)=> {
     window.open("https://m.google.com/")
   } else if (recorded_text.includes("how are you") || recorded_text.includes("how r u")) {
     speak("I am fine. How may i help you?")
-  } else if (recorded_text.includes("play game") || recorded_text.includes("play games")) {
+  }else if (recorded_text.includes("hello") || recorded_text.includes("hi")) {
+    speak("Hello. How may i help you?")
+  }else if (recorded_text.includes("play game") || recorded_text.includes("play games")) {
     speak("here are some games")
     window.open("https://poki.com/")
   } else if (recorded_text.includes("open Instagram")) {
